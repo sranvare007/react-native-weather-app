@@ -3,6 +3,9 @@
     "preview": {
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "REACT_APP_OPEN_WEATHER_API_KEY": "4edf4df7448bb8210fe0a4b40d9b35d3"
       }
     },
     "preview2": {
