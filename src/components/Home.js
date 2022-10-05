@@ -1,13 +1,5 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  Image,
-  StyleSheet,
-  ScrollView,
-} from "react-native";
+import { View, StyleSheet, ScrollView, Text } from "react-native";
 import React, { useEffect, useState } from "react";
-import { TYPOGRAPHY } from "../constants/TYPOGRAPHY";
 import * as Location from "expo-location";
 import { useDispatch, useSelector } from "react-redux";
 import { setLocationCoords } from "../features/locationCoords";
@@ -16,9 +8,9 @@ import { REACT_APP_OPEN_WEATHER_API_KEY } from "@env";
 import LoadingComponent from "./LoadingComponent";
 import { AppConstants } from "../constants/constants";
 import HomeTopView from "./HomeTopView";
-import { helpers } from "../helpers/helpers";
 import HomeInfoBar from "./HomeInfoBar";
 import HomeInfoList from "./HomeInfoList";
+import { TYPOGRAPHY } from "../constants/TYPOGRAPHY";
 
 export default function Home() {
   const [errorMsg, setErrorMsg] = useState(null);
@@ -105,9 +97,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#2192FF",
   },
   infoContainer: {
+    flex: 1,
     flexDirection: "column",
     alignItems: "center",
     backgroundColor: "#eee",
-    flex: 1,
+    paddingBottom: 30,
   },
 });
