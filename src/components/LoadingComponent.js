@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   loadingText: {
-    fontFamily: TYPOGRAPHY.RAJDHANI_BOLD,
     fontSize: 28,
+    fontFamily: TYPOGRAPHY.RAJDHANI_BOLD,
   },
 });

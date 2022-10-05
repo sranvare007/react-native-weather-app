@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counter from "../features/counter";
+import locationCoords from "../features/locationCoords";
 
 export default store = configureStore({
   reducer: {
-    counter: counter,
+    locationCoords: locationCoords,
   },
 });

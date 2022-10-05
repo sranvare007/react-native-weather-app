@@ -27,12 +27,12 @@ export default function App() {
   }, []);
 
   if (!fontsLoaded) {
-    return <LoadingComponent />;
+    return null;
   }
 
   return (
     <Provider store={store}>
-      <StatusBar backgroundColor={"#94B3FD"} barStyle={"dark-content"} />
+      <StatusBar backgroundColor={"#2192FF"} barStyle={"dark-content"} />
       <Home />
     </Provider>
   );
