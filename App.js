@@ -32,7 +32,7 @@ export default function App() {
 
   return (
     <Provider store={store}>
-      <StatusBar backgroundColor={"#2192FF"} barStyle={"dark-content"} />
+      <StatusBar backgroundColor={"#2192FF"} barStyle={"light-content"} />
       <Home />
     </Provider>
   );
